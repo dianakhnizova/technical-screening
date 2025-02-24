@@ -1,0 +1,26 @@
+[
+    { "value": "task1", "text": "Display attribute values" },
+    { "value": "task2", "text": "Selector weights" },
+    { "value": "task3", "text": "Pseudo-classes and pseudo-elements" },
+    { "value": "task4", "text": "Box model" },
+    { "value": "task5", "text": "em vs rem, relative and absolute values" },
+    { "value": "task6", "text": "Positioning: document flow, position property, overflow, and z-index" },
+    { "value": "task7", "text": "Flexbox" },
+    { "value": "task8", "text": "Grid" },
+    { "value": "task9", "text": "Data types" },
+    { "value": "task10", "text": "Variables" },
+    { "value": "task11", "text": "Number methods" },
+    { "value": "task12", "text": "String methods & String templates" },
+    { "value": "task13", "text": "Ternary, Nullish Coalescing, Optional Chaining, and Logical Operators – Syntax and Use Cases" },
+    { "value": "task14", "text": "Switch case - examples where it can be useful" },
+    { "value": "task15", "text": "Loops - for, while, do while" },
+    { "value": "task16", "text": "Be able to discover cases of implicit data types conversion into boolean, string, number" },
+    { "value": "task17", "text": "Type conversions" },
+    { "value": "task18", "text": "Strict comparison" },
+    { "value": "task19", "text": "Basics of OOP" },
+    { "value": "task20", "text": "Basic data structures and their organization (array, list, stack, queue, tree, hash table, etc.)." },
+    { "value": "task21", "text": "Ability to implement a fairly simple algorithm in JavaScript. Example tasks" },
+    { "value": "task22", "text": "Basic sorting and searching algorithms" },
+    { "value": "task23", "text": "Binary number system" }
+  ]
+  
