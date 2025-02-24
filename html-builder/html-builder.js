@@ -14,4 +14,8 @@ const select = document.createElement("select");
 select.classList.add("select");
 section.appendChild(select);
 
-export {select}
+const taskContainer = document.createElement('div')
+taskContainer.classList.add("task-container")
+section.appendChild(taskContainer)
+
+export {select, taskContainer}
