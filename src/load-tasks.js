@@ -2,11 +2,11 @@ import {
   select,
   taskContainer,
   textarea, imgContainer
-} from "./../../html-builder/html-builder.js";
+} from "../html-builder/html-builder.js";
 
 const loadTasks = async () => {
   try {
-    const response = await fetch("./../../sources/tasks.json");
+    const response = await fetch("../sources/tasks.json");
     const taskData = await response.json();
 
     const defaultOption = document.createElement("option");
