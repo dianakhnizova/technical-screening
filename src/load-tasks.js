@@ -6,7 +6,7 @@ import {
 
 const loadTasks = async () => {
   try {
-    const response = await fetch("../sources/tasks.json");
+    const response = await fetch("sources/tasks.json");
     const taskData = await response.json();
 
     const defaultOption = document.createElement("option");
