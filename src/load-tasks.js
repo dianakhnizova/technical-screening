@@ -1,4 +1,4 @@
-import { select, taskContainer } from "./../../html-builder/html-builder.js";
+import { select, taskContainer, textarea } from "./../../html-builder/html-builder.js";
 
 const loadTasks = async () => {
   try {
@@ -30,10 +30,6 @@ const loadSavedTask = () => {
   const savedContent = localStorage.getItem(taskKey) || "";
 
   taskContainer.innerHTML = ""; 
-
-  const textarea = document.createElement("textarea");
-  textarea.classList.add("task-input");
-  textarea.placeholder = `Enter text for task`;
   textarea.value = savedContent;
 
   taskContainer.appendChild(textarea);

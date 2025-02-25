@@ -18,9 +18,13 @@ const taskContainer = document.createElement('div')
 taskContainer.classList.add("task-container")
 section.appendChild(taskContainer)
 
+const textarea = document.createElement("textarea");
+textarea.classList.add("task-input");
+textarea.placeholder = `Enter text for task`;
+
 const buttonSave = document.createElement("button")
 buttonSave.classList.add("button")
 buttonSave.textContent = "Save"
 section.appendChild(buttonSave)
 
-export {select, taskContainer, buttonSave}
+export {select, taskContainer, buttonSave, textarea}
