@@ -1,7 +1,7 @@
 import {
   select,
   taskContainer,
-  textarea,
+  textarea, imgContainer
 } from "./../../html-builder/html-builder.js";
 
 const loadTasks = async () => {
@@ -35,6 +35,7 @@ const loadSavedTask = () => {
 
   if (taskKey) {
     taskContainer.classList.add("visible");
+    imgContainer.classList.add("unvisible");
   } else {
     taskContainer.classList.remove("visible");
     return;

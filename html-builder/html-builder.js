@@ -49,6 +49,10 @@ const taskContainer = document.createElement("div");
 taskContainer.classList.add("task-container");
 section.appendChild(taskContainer);
 
+const imgContainer = document.createElement("div");
+imgContainer.classList.add("img-container");
+section.appendChild(imgContainer);
+
 const textarea = document.createElement("textarea");
 textarea.classList.add("task-input");
 textarea.placeholder = `Enter text for task`;
@@ -95,7 +99,7 @@ linksData.forEach(({ href, text, target }) => {
   if (target) {
     link.target = target;
   }
- 
+
   footerContacts.appendChild(link);
 
   if (text !== "GitHub") {
@@ -103,4 +107,4 @@ linksData.forEach(({ href, text, target }) => {
   }
 });
 
-export { select, taskContainer, buttonSave, textarea };
+export { select, taskContainer, buttonSave, textarea, imgContainer };

@@ -168,6 +168,23 @@ a:active {
   border-bottom: 2px solid #ccc; 
 }
 
+.img-container {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  border-radius: 14px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.063),
+    -4px 4px 14px rgba(0, 0, 0, 0.063), 0 6px 14px rgba(0, 0, 0, 0.051);
+  border: none;
+  background-image: url(/assets/Flux_Dev_A_minimalist_and_clean_cover_image_for_a_project_cont_1.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-container.unvisible {
+  display: none;
+}
+
 .button {
   width: 180px;
   height: 50px;
