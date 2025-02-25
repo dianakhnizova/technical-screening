@@ -151,3 +151,36 @@ a:active {
     inset -6px -6px 12px rgba(255, 255, 255, 0.7);
   background: linear-gradient(145deg, #e6e6e6, #ffffff);
 }
+
+.footer-container {
+  display: flex;
+  height: 140px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 60px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.063),
+    -4px 4px 14px rgba(0, 0, 0, 0.063), 0 6px 14px rgba(0, 0, 0, 0.051);
+  border: none;
+  padding: 0 40px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: black;
+  font-family: "Karla", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.footer-link:hover {
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.471);
+}

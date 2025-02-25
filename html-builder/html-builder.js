@@ -58,4 +58,49 @@ buttonSave.classList.add("button");
 buttonSave.textContent = "Save";
 section.appendChild(buttonSave);
 
+const footer = document.createElement("div");
+footer.classList.add("footer");
+wrapper.appendChild(footer);
+
+const footerContainer = document.createElement("div");
+footerContainer.classList.add("footer-container");
+footer.appendChild(footerContainer);
+
+const footerContacts = document.createElement("div");
+footerContacts.classList.add("footer-contacts");
+footerContainer.appendChild(footerContacts);
+
+const linksData = [
+  { href: "tel:+77072754341", text: "Phone" },
+  { href: "mailto:khnizovad@gmail.com", text: "G-Mail", target: "_blank" },
+  {
+    href: "https://www.instagram.com/dianakhnizova/",
+    text: "Instagram",
+    target: "_blank",
+  },
+  { href: "https://t.me/dianakhnizova", text: "Telegram", target: "_blank" },
+  {
+    href: "https://github.com/dianakhnizova",
+    text: "GitHub",
+    target: "_blank",
+  },
+];
+
+linksData.forEach(({ href, text, target }) => {
+  const link = document.createElement("a");
+  link.href = href;
+  link.textContent = text;
+  link.classList.add("footer-link");
+
+  if (target) {
+    link.target = target;
+  }
+ 
+  footerContacts.appendChild(link);
+
+  if (text !== "GitHub") {
+    footerContacts.appendChild(document.createTextNode(" | "));
+  }
+});
+
 export { select, taskContainer, buttonSave, textarea };
