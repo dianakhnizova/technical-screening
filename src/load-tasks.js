@@ -1,4 +1,8 @@
-import { select, taskContainer, textarea } from "./../../html-builder/html-builder.js";
+import {
+  select,
+  taskContainer,
+  textarea,
+} from "./../../html-builder/html-builder.js";
 
 const loadTasks = async () => {
   try {
@@ -29,7 +33,14 @@ const loadSavedTask = () => {
   const taskKey = select.value;
   const savedContent = localStorage.getItem(taskKey) || "";
 
-  taskContainer.innerHTML = ""; 
+  if (taskKey) {
+    taskContainer.classList.add("visible");
+  } else {
+    taskContainer.classList.remove("visible");
+    return;
+  }
+
+  taskContainer.innerHTML = "";
   textarea.value = savedContent;
 
   taskContainer.appendChild(textarea);
