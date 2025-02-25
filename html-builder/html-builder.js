@@ -18,4 +18,9 @@ const taskContainer = document.createElement('div')
 taskContainer.classList.add("task-container")
 section.appendChild(taskContainer)
 
-export {select, taskContainer}
+const buttonSave = document.createElement("button")
+buttonSave.classList.add("button")
+buttonSave.textContent = "Save"
+section.appendChild(buttonSave)
+
+export {select, taskContainer, buttonSave}
