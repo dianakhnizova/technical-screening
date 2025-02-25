@@ -1,4 +1,4 @@
-import { select, taskContainer } from "../../html-builder/html-builder.js";
+import { select, taskContainer } from "./../../html-builder/html-builder.js";
 
 const loadTasks = async () => {
     try {
