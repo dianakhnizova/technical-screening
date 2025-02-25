@@ -1,4 +1,4 @@
-import { select } from "./../../html-builder/html-builder.js";
+import { select, taskContainer } from "./../../html-builder/html-builder.js";
 
 const loadTasks = async () => {
     try {
@@ -17,6 +17,16 @@ const loadTasks = async () => {
         option.value = task.value;
         option.textContent = task.text;
         select.appendChild(option);
+      });
+
+      select.addEventListener("change", (event) => {
+        taskContainer.innerHTML = ""; 
+  
+        const textarea = document.createElement("textarea");
+        textarea.classList.add("task-input");
+        textarea.placeholder = "Enter content: ->";
+        
+        taskContainer.appendChild(textarea);
       });
   
     } catch (error) {
