@@ -98,8 +98,8 @@ a:active {
   padding: 8px;
   border-radius: 14px;
   border: 2px solid #ccc;
-  background-color: #f9f9f9; 
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); 
+  background-color: #f9f9f9;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
   background-color: #fff;
   color: #333;
@@ -112,37 +112,37 @@ a:active {
 }
 
 .select:hover {
-  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.15); 
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 .select:focus {
   border: 2px solid black;
-  background-color: #f9f9f9; 
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); 
+  background-color: #f9f9f9;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .task-container {
   display: none;
   justify-content: center;
   align-items: center;
-  width: 1400px;
+  width: 70%;
   height: 800px;
   border-radius: 14px;
   border: 2px solid #ccc;
-  background-color: #f9f9f9; 
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); 
+  background-color: #f9f9f9;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
   padding: 40px;
   margin: 0 0 20px 0;
   transition: all 0.3s ease-in-out;
 }
 
 .task-container.visible {
-  display: flex; 
+  display: flex;
 }
 
 .task-container:hover {
-  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.15); 
-  transform: scale(1.02); 
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
 }
 
 .task-input {
@@ -165,7 +165,7 @@ a:active {
 }
 
 .task-input:focus {
-  border-bottom: 2px solid #ccc; 
+  border-bottom: 2px solid #ccc;
 }
 
 .img-container {
@@ -214,9 +214,14 @@ a:active {
   background: linear-gradient(145deg, #e6e6e6, #ffffff);
 }
 
+.footer {
+  width: 100%;
+}
+
 .footer-container {
   display: flex;
-  height: 140px;
+  width: 100%;
+  height: auto;
   justify-content: center;
   align-items: center;
 }
@@ -226,13 +231,13 @@ a:active {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  height: 60px;
+  height: auto;
   background: white;
   border-radius: 14px;
   box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.063),
     -4px 4px 14px rgba(0, 0, 0, 0.063), 0 6px 14px rgba(0, 0, 0, 0.051);
   border: none;
-  padding: 0 40px;
+  padding: 20px 40px;
 }
 
 .footer-link {
@@ -245,4 +250,22 @@ a:active {
 
 .footer-link:hover {
   text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.471);
+}
+
+@media (min-width: 509px) and (max-width: 742px) {
+  .footer-contacts {
+    gap: 8px;
+  }
+  .footer-link {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 509px) {
+  .footer-contacts {
+    gap: 4px;
+  }
+  .footer-link {
+    font-size: 14px;
+  }
 }
