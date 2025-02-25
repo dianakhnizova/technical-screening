@@ -32,8 +32,7 @@ a:active {
 .header {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -44,6 +43,44 @@ a:active {
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.3s ease-in-out;
   border-radius: 0 0 40px 40px;
+  padding: 0 80px 0 80px;
+}
+
+.logo-container {
+  width: 40px;
+  height: 40px;
+  background-image: url(/assets/apple-svgrepo-com.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  gap: 26px;
+}
+
+.nav-item {
+  font-family: "Karla", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.nav-item:hover {
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.471);
+}
+
+.link {
+  text-decoration: none;
+  color: black;
 }
 
 .section {
@@ -53,6 +90,7 @@ a:active {
   align-items: center;
   flex-direction: column;
   gap: 20px;
+  padding: 80px 0 0 0;
 }
 
 .select {
