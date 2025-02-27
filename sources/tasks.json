@@ -18,8 +18,8 @@
     { "value": "task17", "text": "Type conversions" },
     { "value": "task18", "text": "Strict comparison" },
     { "value": "task19", "text": "Basics of OOP" },
-    { "value": "task20", "text": "Basic data structures and their organization (array, list, stack, queue, tree, hash table, etc.)." },
-    { "value": "task21", "text": "Ability to implement a fairly simple algorithm in JavaScript. Example tasks" },
+    { "value": "task20", "text": "Basic data structures and their organization (array)" },
+    { "value": "task21", "text": "Basic data structures and their organization (list, stack, queue, tree, hash table)" },
     { "value": "task22", "text": "Basic sorting and searching algorithms" },
     { "value": "task23", "text": "Binary number system" }
   ]
