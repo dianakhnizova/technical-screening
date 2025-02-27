@@ -10,8 +10,21 @@ const logoContainer = document.createElement("div");
 logoContainer.classList.add("logo-container");
 header.appendChild(logoContainer);
 
+
+const burgerMenu = document.createElement("button")
+burgerMenu.classList.add("header-burger")
+burgerMenu.id = "burger-menu";
+header.appendChild(burgerMenu)
+
+for (let i = 0; i < 3; i++) {
+  const span = document.createElement("span");
+  span.classList.add("span-burger");
+  burgerMenu.appendChild(span);
+}
+
 const navContainer = document.createElement("div");
 navContainer.classList.add("nav-container");
+navContainer.id = "nav-menu"
 header.appendChild(navContainer);
 
 const ul = document.createElement("ul");
@@ -107,4 +120,8 @@ linksData.forEach(({ href, text, target }) => {
   }
 });
 
-export { select, taskContainer, buttonSave, textarea, imgContainer };
+const overlay = document.createElement("div");
+overlay.classList.add("overlay");
+document.body.appendChild(overlay);
+
+export { select, taskContainer, buttonSave, textarea, imgContainer, burgerMenu, overlay};
